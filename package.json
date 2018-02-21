@@ -1,0 +1,23 @@
+{
+  "name": "eventplayground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "eventstore": "docker run --name eventstore-node -it -p 2113:2113 -p 1113:1113 eventstore/eventstore",
+    "test": "ava test/process.spec.js -v"
+  },
+  "author": "Marc Höffl <marc.hoeffl@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.4.0",
+    "eventstore-node": "^0.1.0",
+    "lodash": "^4.17.4",
+    "patrun": "^0.5.1"
+  },
+  "devDependencies": {
+    "sinon": "^2.1.0",
+    "unexpected": "^10.27.0",
+    "unexpected-sinon": "^10.7.1"
+  }
+}
